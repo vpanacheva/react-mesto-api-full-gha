@@ -14,6 +14,7 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, isLoading }) {
     });
   }
 
+  /** чистим инпуты */
   useEffect(() => {
     setValues({
       link: '',
@@ -23,19 +24,19 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, isLoading }) {
 
   return (
     <PopupWithForm
-      name='popup_type_card'
+      name='popup-add'
       title='Новое место'
       text={isLoading? 'Создаем...' : 'Создать'}
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}
     >
-         <label className='popup__form-info'>
+      <fieldset className='form__input-container'>
         <input
           type='text'
           name='name'
           id='cardname-input'
-          className='popup__input popup__input_type_title'
+          className='form__item form__item_image_name'
           placeholder='Название'
           minLength={2}
           maxLength={30}
@@ -43,21 +44,21 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, isLoading }) {
           value={values.name || ''}
           onChange={handleChange}
         />
-        <span className='popup__input-error cardname-input-error' />
+        <span className='form__item-error cardname-input-error' />
         <input
           type='url'
           name='link'
           id='link-input'
-          className='popup__input popup__input_type_link'
+          className='form__item form__item_image_link'
           placeholder='Ссылка на картинку'
           required
           value={values.link || ''}
           onChange={handleChange}
         />
-        <span className='popup__input-error link-input-error' />
-      </label>
+        <span className='form__item-error link-input-error' />
+      </fieldset>
     </PopupWithForm>
   );
 }
 
-export { AddPlacePopup }
+export { AddPlacePopup };

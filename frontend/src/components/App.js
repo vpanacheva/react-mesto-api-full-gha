@@ -36,7 +36,6 @@ function App() {
 
   const [selectedCard, setSelectedCard] = useState({})
   const [currentUser, setCurrentUser] = useState(
-
     {}
   ) /** создаем переменную состояния, отвечающую за данные пользователя из апи. Стейт данных текущего пользователя*/
   const [cards, setCards] = useState([])
