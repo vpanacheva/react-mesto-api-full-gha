@@ -11,7 +11,7 @@
     "depcheck": "depcheck"
   },
   "keywords": [],
-  "author": "ira kudryashova",
+  "author": "Varvara Panacheva",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
