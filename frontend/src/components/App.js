@@ -19,7 +19,7 @@ import { EditAvatarPopup } from "./EditAvatarPopup.js"
 import { AddPlacePopup } from "./AddPlacePopup.js"
 import { ConfirmDeletePopup } from "./ConfirmDeletePopup.js"
 
-import { AppContext } from "../contexts/AppContext.js"
+//import { AppContext } from "../contexts/AppContext.js"
 import { CurrentUserContext } from "../contexts/CurrentUserContext.js"
 
 import { api } from "../utils/Api.js"
