@@ -108,7 +108,7 @@ class Api {
 
 const api = new Api({
   //baseUrl: "http://localhost:3000",
- baseUrl: "https://api.domainname.vpanacheva.nomoreparties.co",
+ baseUrl: "http://api.domainname.vpanacheva.nomoreparties.co",
 })
 
 export { api }
