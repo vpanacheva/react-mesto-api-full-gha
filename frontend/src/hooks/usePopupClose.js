@@ -26,7 +26,7 @@ function usePopupClose(isOpen, closePopup) {
       document.removeEventListener("mousedown", handleOverlay);
     };
     // обязательно следим за `isOpen`, чтобы срабатывало только при открытии, а не при любой перерисовке компонента
-  }, [isOpen]);
+  }, [closePopup, isOpen]);
 }
 
 export { usePopupClose };
