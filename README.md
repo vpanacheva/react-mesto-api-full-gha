@@ -1,6 +1,5 @@
 
-Адрес репозитория: https://github.com/vpanacheva/react-mesto-api-full-gha.git
-
+Адрес репозитория: https://github.com
 ## Ссылки на проект
 
 IP-адрес 158.160.3.110
