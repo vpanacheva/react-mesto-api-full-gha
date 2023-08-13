@@ -235,7 +235,6 @@ function App() {
   }
 
   /** перенаправляем пользователя после проверки токена */
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   function handleTokenCheck() {
     const jwt = localStorage.getItem("jwt")
     console.log(jwt)
