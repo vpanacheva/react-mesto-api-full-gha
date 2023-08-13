@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react"
 import { Routes, Route, useNavigate, Navigate } from "react-router-dom"
 
@@ -79,7 +80,7 @@ function App() {
   /** проверка токена */
   useEffect(() => {
     handleTokenCheck()
-  }, [handleTokenCheck])
+  }, [])
 
   useEffect(() => {
     if (isLoggedIn) {
