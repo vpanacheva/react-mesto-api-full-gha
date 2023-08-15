@@ -80,13 +80,13 @@ function App() {
   useEffect(() => {
     handleTokenCheck()
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+ }, [])
 
-  useEffect(() => {
-    if (isLoggedIn) {
-      navigate("/")
-    }
-  }, [isLoggedIn, navigate])
+  //useEffect(() => {
+   // if (isLoggedIn) {
+   //   navigate("/")
+   // }
+  //}, [isLoggedIn, navigate])
 
   /** обработчики */
   function handleEditProfileClick() {
@@ -234,9 +234,12 @@ function App() {
         console.log(err)
       })
   }
+ // useEffect(() => {
+  //handleTokenCheck()
+   //eslint-disable-next-line react-hooks/exhaustive-deps
+//}, [])
 
   /** перенаправляем пользователя после проверки токена */
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   function handleTokenCheck() {
     const jwt = localStorage.getItem("jwt")
     console.log(jwt)
@@ -252,7 +255,7 @@ function App() {
           console.log(err)
         })
     }
-  }
+  } //}, [])
 
   /** обработчик чекаута пользователя */
   function handleSignOut() {
