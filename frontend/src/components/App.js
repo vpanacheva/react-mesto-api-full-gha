@@ -79,7 +79,8 @@ function App() {
   /** проверка токена */
   useEffect(() => {
     handleTokenCheck()
-  }, [handleTokenCheck])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   useEffect(() => {
     if (isLoggedIn) {
