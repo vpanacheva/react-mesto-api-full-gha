@@ -62,13 +62,14 @@ function App() {
   /** проверка токена */
   useEffect(() => {
     handleTokenCheck();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-   /** useEffect(() => {
+   useEffect(() => {
     if (isLoggedIn) {
       navigate("/")
     }
-  }, [isLoggedIn, navigate]);*/
+  }, [isLoggedIn, navigate]);
 
   function handleEditProfileClick() {
     setIsEditProfilePopupOpen(true);
