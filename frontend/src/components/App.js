@@ -76,11 +76,7 @@ function App() {
         })
   }, [isLoggedIn])
 
-  /** проверка токена */
- // useEffect(() => {
-   // handleTokenCheck()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-// }, [])
+ 
 
  useEffect(() => {
   if (isLoggedIn) {
@@ -105,7 +101,7 @@ function App() {
           console.log(err)
         })
     }
-  }, [navigate])
+  }, [])
 
 
   /** обработчики */
